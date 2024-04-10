@@ -11,18 +11,8 @@ def index(request):
     return render(request, 'index.html', context)
 
 def produto_lista(request):
-    departamentos = Departamento.objects.all()
-
-    context = {
-        'departamentos' : departamentos
-    }
-    return render(request, 'produtos.html', context)
+    return render(request, 'produtos.html')
 
 def produto_detalhe(request):
-    departamentos = Departamento.objects.all()
-
-    context = {
-        'departamentos' : departamentos
-    }
-    return render(request, 'produto_detalhes.html', context)
+    return render(request, 'produto_detalhes.html')
 
