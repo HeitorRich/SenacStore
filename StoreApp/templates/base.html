@@ -31,7 +31,7 @@
                                 <li><a class="dropdown-item" href="{% url 'produto_lista' %}">Todos Produtos</a></li>
                                 <li><hr class="dropdown-divider" /></li>
                             {% for departamento in departamentos %}
-                                <li><a class="dropdown-item" href="#!">{{ departamento.nome }}</a></li>
+                                <li><a class="dropdown-item" href="{% url 'produto_lista_por_departamento' id=departamento.id %}">{{ departamento.nome }}</a></li>
                             {% endfor %}
                             </ul>
                         </li>
@@ -50,7 +50,7 @@
 
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2024</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
