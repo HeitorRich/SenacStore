@@ -41,10 +41,10 @@ class Cliente(models.Model):
         ('VIU','Viúvo')
     ]
     nome = models.CharField(max_length=50)
-    cpf = models.CharField(max_length=14)
+    cpf = models.CharField(max_length=14, verbose_name="CPF")
     data_nascimento = models.DateField(verbose_name="Data de Nascimento")
     email = models.EmailField(max_length=120)
-    cep = models.CharField(max_length=9)
+    cep = models.CharField(max_length=9, verbose_name="CEP")
     endereco = models.CharField(max_length=250, verbose_name="Endereço")
     nro = models.IntegerField()
     bairro = models.CharField(max_length=50)
